@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02830922A151B8A0056A2D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F02830912A151B8A0056A2D3 /* Alamofire */; };
+		F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830942A151BBC0056A2D3 /* BaseService.swift */; };
+		F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */; };
+		F02830992A151CD60056A2D3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830982A151CD60056A2D3 /* BaseResponse.swift */; };
+		F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309B2A151E060056A2D3 /* RemoteRepository.swift */; };
+		F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309F2A151EAB0056A2D3 /* Encodable.swift */; };
+		F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A22A151F080056A2D3 /* DataConstants.swift */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
 		F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F712A13EBEE00D079DA /* ContentView.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
@@ -34,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F02830942A151BBC0056A2D3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		F02830982A151CD60056A2D3 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		F028309B2A151E060056A2D3 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		F028309F2A151EAB0056A2D3 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		F02830A22A151F080056A2D3 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
 		F0C65F712A13EBEE00D079DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02830922A151B8A0056A2D3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F028308E2A151AB90056A2D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F028308F2A151AC70056A2D3 /* Remote */,
+				F028309A2A151DD70056A2D3 /* Repositories */,
+				F02830A12A151EF50056A2D3 /* Utils */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F028308F2A151AC70056A2D3 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F02830932A151B950056A2D3 /* Services */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		F02830932A151B950056A2D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F02830942A151BBC0056A2D3 /* BaseService.swift */,
+				F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */,
+				F02830982A151CD60056A2D3 /* BaseResponse.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F028309A2A151DD70056A2D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F028309B2A151E060056A2D3 /* RemoteRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F028309D2A151E870056A2D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F028309E2A151E960056A2D3 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F028309E2A151E960056A2D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F028309F2A151EAB0056A2D3 /* Encodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F02830A12A151EF50056A2D3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F02830A22A151F080056A2D3 /* DataConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F0C65F632A13EBEE00D079DA = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */,
+				F028309D2A151E870056A2D3 /* Common */,
+				F028308E2A151AB90056A2D3 /* Data */,
 				F0C65F712A13EBEE00D079DA /* ContentView.swift */,
 				F0C65F732A13EBEF00D079DA /* Assets.xcassets */,
 				F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */,
@@ -145,6 +221,9 @@
 			dependencies = (
 			);
 			name = "Meli Test";
+			packageProductDependencies = (
+				F02830912A151B8A0056A2D3 /* Alamofire */,
+			);
 			productName = "Meli Test";
 			productReference = F0C65F6C2A13EBEE00D079DA /* Meli Test.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +296,9 @@
 				Base,
 			);
 			mainGroup = F0C65F632A13EBEE00D079DA;
+			packageReferences = (
+				F02830902A151B8A0056A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F0C65F6D2A13EBEE00D079DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02830992A151CD60056A2D3 /* BaseResponse.swift in Sources */,
+				F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */,
+				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
 				F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
+				F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */,
+				F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */,
+				F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F02830902A151B8A0056A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F02830912A151B8A0056A2D3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F02830902A151B8A0056A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0C65F642A13EBEE00D079DA /* Project object */;
 }
