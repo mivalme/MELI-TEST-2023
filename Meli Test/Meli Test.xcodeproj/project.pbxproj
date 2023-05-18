@@ -14,6 +14,9 @@
 		F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309B2A151E060056A2D3 /* RemoteRepository.swift */; };
 		F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309F2A151EAB0056A2D3 /* Encodable.swift */; };
 		F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A22A151F080056A2D3 /* DataConstants.swift */; };
+		F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A72A152F780056A2D3 /* SearchEngineView.swift */; };
+		F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */; };
+		F02830AD2A153BFF0056A2D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F02830AC2A153BFF0056A2D3 /* Colors.xcassets */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
 		F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F712A13EBEE00D079DA /* ContentView.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		F028309B2A151E060056A2D3 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		F028309F2A151EAB0056A2D3 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		F02830A22A151F080056A2D3 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
+		F02830A72A152F780056A2D3 /* SearchEngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineView.swift; sourceTree = "<group>"; };
+		F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineViewModel.swift; sourceTree = "<group>"; };
+		F02830AC2A153BFF0056A2D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
 		F0C65F712A13EBEE00D079DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +152,40 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F02830A42A152CD10056A2D3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F02830AB2A153BDF0056A2D3 /* Assets */,
+				F02830A52A152D050056A2D3 /* Stories */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F02830A52A152D050056A2D3 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				F02830A62A152F660056A2D3 /* Search Engine */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		F02830A62A152F660056A2D3 /* Search Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F02830A72A152F780056A2D3 /* SearchEngineView.swift */,
+				F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */,
+			);
+			path = "Search Engine";
+			sourceTree = "<group>";
+		};
+		F02830AB2A153BDF0056A2D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F02830AC2A153BFF0056A2D3 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		F0C65F632A13EBEE00D079DA = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +212,7 @@
 				F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */,
 				F028309D2A151E870056A2D3 /* Common */,
 				F028308E2A151AB90056A2D3 /* Data */,
+				F02830A42A152CD10056A2D3 /* Presentation */,
 				F0C65F712A13EBEE00D079DA /* ContentView.swift */,
 				F0C65F732A13EBEF00D079DA /* Assets.xcassets */,
 				F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */,
@@ -315,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02830AD2A153BFF0056A2D3 /* Colors.xcassets in Resources */,
 				F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */,
 				F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */,
 			);
@@ -345,7 +387,9 @@
 				F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */,
 				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
 				F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */,
+				F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
+				F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */,
 				F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */,
 				F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */,
 				F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */,
