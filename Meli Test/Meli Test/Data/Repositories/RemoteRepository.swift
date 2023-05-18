@@ -37,8 +37,8 @@ class RemoteRepository: RemoteRepositoryProtocol {
                         headers: nil) { response in
             
             switch response {
-            case .success(let response, let metadata):
-                completionHandler(.success(response: response, metadata: metadata))
+            case .success(let response):
+                completionHandler(.success(response: response))
             case .failure(let error):
                 completionHandler(.failure(error: error))
             case .notConnectedToInternet:

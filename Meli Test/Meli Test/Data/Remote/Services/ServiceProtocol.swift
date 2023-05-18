@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum ServiceResponse<T: Codable> {
-    case success(response: T, metadata: BaseResponse<T>.Metadata?)
+    case success(response: T)
     case failure(error: String?)
     case notConnectedToInternet
 }

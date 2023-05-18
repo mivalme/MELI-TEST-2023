@@ -38,34 +38,19 @@ class BaseService: ServiceProtocol {
         
         dataRequest
             .validate()
-            .responseDecodable(of: BaseResponse<T>.self) { (serviceResponse) in
-            
-            guard let response = serviceResponse.value else {
+            .responseDecodable(of: T.self) { (serviceResponse) in
                 
-                if let error = serviceResponse.error as NSError?, error.code == NSURLErrorNotConnectedToInternet {
-                    completionHandler(.notConnectedToInternet)
-                } else {
-                    let decoder = JSONDecoder()
-                    if let data = serviceResponse.data {
-                        let baseResponse = try? decoder.decode(BaseResponse<T>.self, from: data)
-                        completionHandler(.failure(error: baseResponse?.errors?.first?.message))
+                guard let response = serviceResponse.value else {
+                    
+                    if let error = serviceResponse.error as NSError?, error.code == NSURLErrorNotConnectedToInternet {
+                        completionHandler(.notConnectedToInternet)
                     } else {
                         completionHandler(.failure(error: nil))
                     }
+                    return
                 }
-                return
+                
+                completionHandler(.success(response: response))
             }
-            
-            guard let statusCode = serviceResponse.response?.statusCode, statusCode == 200 else {
-                completionHandler(.failure(error: response.message == nil ? response.errors?.first?.message : response.message))
-                return
-            }
-            
-            if let data = response.data {
-                completionHandler(.success(response: data, metadata: response.metadata))
-            } else {
-                completionHandler(.failure(error: nil))
-            }
-        }
     }
 }

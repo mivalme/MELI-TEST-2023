@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct SearchEngineView: View {
-    @State var text: String = ""
+    @StateObject var viewModel = SearchEngineViewModel()
     
     var body: some View {
         VStack {
             VStack {
-                TextField("Search here", text: $text)
+                TextField("Search here", text: $viewModel.searchText)
                     .padding(8)
                     .background(Color.white)
                     .cornerRadius(8)
+                    .onChange(of: viewModel.searchText) { _ in
+                        viewModel.searchProduct()
+                    }
             }
             .padding(16)
             .background(Color("primary-light"))

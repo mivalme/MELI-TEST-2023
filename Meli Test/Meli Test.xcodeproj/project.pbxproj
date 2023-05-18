@@ -10,15 +10,20 @@
 		F02830922A151B8A0056A2D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F02830912A151B8A0056A2D3 /* Alamofire */; };
 		F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830942A151BBC0056A2D3 /* BaseService.swift */; };
 		F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */; };
-		F02830992A151CD60056A2D3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830982A151CD60056A2D3 /* BaseResponse.swift */; };
 		F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309B2A151E060056A2D3 /* RemoteRepository.swift */; };
 		F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028309F2A151EAB0056A2D3 /* Encodable.swift */; };
 		F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A22A151F080056A2D3 /* DataConstants.swift */; };
 		F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A72A152F780056A2D3 /* SearchEngineView.swift */; };
 		F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */; };
 		F02830AD2A153BFF0056A2D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F02830AC2A153BFF0056A2D3 /* Colors.xcassets */; };
+		F06F62D72A15E2A2007FF437 /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62D62A15E2A2007FF437 /* SearchUseCase.swift */; };
+		F06F62D92A15E2A9007FF437 /* SearchUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62D82A15E2A9007FF437 /* SearchUseCaseProtocol.swift */; };
+		F06F62DB2A15E2C5007FF437 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62DA2A15E2C5007FF437 /* BaseUseCase.swift */; };
+		F06F62DD2A15E2D5007FF437 /* BaseUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62DC2A15E2D5007FF437 /* BaseUseCaseProtocol.swift */; };
+		F06F62E02A15E436007FF437 /* GetProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62DF2A15E436007FF437 /* GetProductsRequest.swift */; };
+		F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62E12A1682B1007FF437 /* GetProductsResponse.swift */; };
+		F06F62E52A1682FF007FF437 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62E42A1682FF007FF437 /* Product.swift */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
-		F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F712A13EBEE00D079DA /* ContentView.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
 		F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */; };
 		F0C65F822A13EBEF00D079DA /* Meli_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F812A13EBEF00D079DA /* Meli_TestTests.swift */; };
@@ -46,16 +51,21 @@
 /* Begin PBXFileReference section */
 		F02830942A151BBC0056A2D3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
-		F02830982A151CD60056A2D3 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		F028309B2A151E060056A2D3 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		F028309F2A151EAB0056A2D3 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		F02830A22A151F080056A2D3 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
 		F02830A72A152F780056A2D3 /* SearchEngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineView.swift; sourceTree = "<group>"; };
 		F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineViewModel.swift; sourceTree = "<group>"; };
 		F02830AC2A153BFF0056A2D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F06F62D62A15E2A2007FF437 /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		F06F62D82A15E2A9007FF437 /* SearchUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCaseProtocol.swift; sourceTree = "<group>"; };
+		F06F62DA2A15E2C5007FF437 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		F06F62DC2A15E2D5007FF437 /* BaseUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCaseProtocol.swift; sourceTree = "<group>"; };
+		F06F62DF2A15E436007FF437 /* GetProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequest.swift; sourceTree = "<group>"; };
+		F06F62E12A1682B1007FF437 /* GetProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
+		F06F62E42A1682FF007FF437 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
-		F0C65F712A13EBEE00D079DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0C65F732A13EBEF00D079DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meli_Test.entitlements; sourceTree = "<group>"; };
 		F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -115,7 +125,6 @@
 			children = (
 				F02830942A151BBC0056A2D3 /* BaseService.swift */,
 				F02830962A151BEB0056A2D3 /* ServiceProtocol.swift */,
-				F02830982A151CD60056A2D3 /* BaseResponse.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,6 +195,60 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		F06F62D22A15E250007FF437 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62D32A15E262007FF437 /* Models */,
+				F06F62D42A15E267007FF437 /* Use Cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F06F62D32A15E262007FF437 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62E32A1682F1007FF437 /* Product */,
+				F06F62DE2A15E426007FF437 /* Search */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F06F62D42A15E267007FF437 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62DA2A15E2C5007FF437 /* BaseUseCase.swift */,
+				F06F62DC2A15E2D5007FF437 /* BaseUseCaseProtocol.swift */,
+				F06F62D52A15E295007FF437 /* Search */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		F06F62D52A15E295007FF437 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62D62A15E2A2007FF437 /* SearchUseCase.swift */,
+				F06F62D82A15E2A9007FF437 /* SearchUseCaseProtocol.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F06F62DE2A15E426007FF437 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62DF2A15E436007FF437 /* GetProductsRequest.swift */,
+				F06F62E12A1682B1007FF437 /* GetProductsResponse.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F06F62E32A1682F1007FF437 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62E42A1682FF007FF437 /* Product.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		F0C65F632A13EBEE00D079DA = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +275,8 @@
 				F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */,
 				F028309D2A151E870056A2D3 /* Common */,
 				F028308E2A151AB90056A2D3 /* Data */,
+				F06F62D22A15E250007FF437 /* Domain */,
 				F02830A42A152CD10056A2D3 /* Presentation */,
-				F0C65F712A13EBEE00D079DA /* ContentView.swift */,
 				F0C65F732A13EBEF00D079DA /* Assets.xcassets */,
 				F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */,
 				F0C65F762A13EBEF00D079DA /* Preview Content */,
@@ -383,16 +446,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02830992A151CD60056A2D3 /* BaseResponse.swift in Sources */,
 				F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */,
 				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
-				F0C65F722A13EBEE00D079DA /* ContentView.swift in Sources */,
 				F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */,
+				F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
 				F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */,
+				F06F62E02A15E436007FF437 /* GetProductsRequest.swift in Sources */,
 				F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */,
+				F06F62E52A1682FF007FF437 /* Product.swift in Sources */,
+				F06F62D72A15E2A2007FF437 /* SearchUseCase.swift in Sources */,
 				F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */,
+				F06F62DD2A15E2D5007FF437 /* BaseUseCaseProtocol.swift in Sources */,
 				F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */,
+				F06F62DB2A15E2C5007FF437 /* BaseUseCase.swift in Sources */,
+				F06F62D92A15E2A9007FF437 /* SearchUseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
