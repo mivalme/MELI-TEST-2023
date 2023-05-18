@@ -6,3 +6,26 @@
 //
 
 import Foundation
+
+class SearchEngineViewModel: ObservableObject {
+    @Published var searchText: String = ""
+    @Published var products: [Product] = []
+    
+    private let searchUseCase: SearchUseCaseProtocol
+    
+    init(searchUseCase: SearchUseCaseProtocol = SearchUseCase()) {
+        self.searchUseCase = searchUseCase
+    }
+    
+    func searchProduct() {
+        searchUseCase.getProducts(request: GetProductsRequest(query: searchText)) { [weak self] response in
+            guard let self = self else { return }
+            switch response {
+            case .success(let data):
+                self.products = data.results
+            default:
+                break
+            }
+        }
+    }
+}

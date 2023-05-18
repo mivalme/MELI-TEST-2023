@@ -27,7 +27,7 @@ struct DataConstants {
         var url: String {
             switch self {
             case .search:
-                return "/search"
+                return ContentOrigin.sites.rawValue + "search"
             }
         }
     }
