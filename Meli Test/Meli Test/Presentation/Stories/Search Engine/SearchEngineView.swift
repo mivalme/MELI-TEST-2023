@@ -16,13 +16,13 @@ struct SearchEngineView: View {
         NavigationView {
             VStack(spacing: 0) {
                 VStack {
-                    TextField("Ej. Play Station 5", text: $viewModel.searchText, onCommit: { viewModel.searchProduct() })
+                    TextField(MeliLocalizables.searchPlaceholder, text: $viewModel.searchText, onCommit: { viewModel.searchProduct() })
                         .padding(8)
                         .background(Color.white)
                         .cornerRadius(8)
                 }
                 .padding(16)
-                .background(Color("primary-light"))
+                .background(MeliColorScheme.primaryLight)
                 
                 if showCategoryIndicator {
                     VStack {
@@ -30,7 +30,7 @@ struct SearchEngineView: View {
                             Text(categoryName)
                                 .foregroundColor(.white)
                             
-                            Image(systemName: "xmark.circle.fill")
+                            Image(systemName: MeliAssets.Images.closeButton)
                         }
                         .padding(8)
                         .background(Color.gray)
@@ -50,7 +50,7 @@ struct SearchEngineView: View {
                         
                         if viewModel.products.isEmpty {
                             VStack {
-                                Text("Usa la barra de arriba para buscar un producto, o selecciona una categoría.")
+                                Text(MeliLocalizables.mainScreenInstructions)
                                     .foregroundColor(.gray)
                                     .font(.title3)
                                     .padding(12)
@@ -85,7 +85,7 @@ struct SearchEngineView: View {
                 }
                 
             }
-            .navigationTitle("Buscar")
+            .navigationTitle(MeliLocalizables.searchNavTitle)
             .navigationBarHidden(true)
         }
     }
@@ -94,7 +94,7 @@ struct SearchEngineView: View {
         VStack {
             Spacer()
             
-            LottieView(animation: "yellow-loader", loopMode: .loop)
+            LottieView(animation: MeliAssets.LottieFiles.loader, loopMode: .loop)
                 .frame(width: 150, height: 150)
             
             Spacer()

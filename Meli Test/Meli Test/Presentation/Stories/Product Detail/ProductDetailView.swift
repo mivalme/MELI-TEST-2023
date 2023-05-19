@@ -35,29 +35,32 @@ struct ProductDetailView: View {
                 
                 VStack(alignment: .leading, spacing: 12) {
                     VStack {
-                        Text("$ \(viewModel.product?.price ?? 0)")
+                        Text(String(format: MeliLocalizables.productPrice,
+                                    arguments: [viewModel.product?.price.withFormat ?? String()]))
                             .foregroundColor(.black)
                             .font(.title)
                     }
                     
                     VStack(alignment: .leading) {
                         if let acceptsMercadopago = viewModel.product?.acceptsMercadopago, acceptsMercadopago {
-                            Text("Llévalo con MercadoPago")
-                                .foregroundColor(Color("blue"))
+                            Text(MeliLocalizables.mercadopagoMessage)
+                                .foregroundColor(MeliColorScheme.blue)
                         }
                         
                         if let freeShipping = viewModel.product?.shipping?.freeShipping, freeShipping {
-                            Text("Envío gratis")
-                                .foregroundColor(Color("success"))
+                            Text(MeliLocalizables.freeShippingMessage)
+                                .foregroundColor(MeliColorScheme.success)
                         }
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("\(viewModel.product?.soldQuantity ?? 0) vendidos")
+                        Text(String(format: MeliLocalizables.soldQuantityMessage,
+                                    arguments: [viewModel.product?.soldQuantity ?? 0]))
                             .foregroundColor(.gray)
                             .font(.caption)
                         
-                        Text("\(viewModel.product?.availableQuantity ?? 0) disponibles")
+                        Text(String(format: MeliLocalizables.availableQuantityMessage,
+                                    arguments: [viewModel.product?.availableQuantity ?? 0]))
                             .foregroundColor(.black)
                             .font(.body)
                     }
@@ -69,7 +72,7 @@ struct ProductDetailView: View {
                                     .foregroundColor(.black)
                                     .font(.subheadline)
                                 
-                                Text(attribute.valueName ?? "")
+                                Text(attribute.valueName ?? String())
                                     .foregroundColor(.gray)
                                     .font(.body)
                             }
