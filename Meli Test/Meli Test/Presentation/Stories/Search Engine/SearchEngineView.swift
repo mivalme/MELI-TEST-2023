@@ -11,30 +11,36 @@ struct SearchEngineView: View {
     @StateObject var viewModel = SearchEngineViewModel()
     
     var body: some View {
-        VStack {
-            VStack {
-                TextField("Search here", text: $viewModel.searchText, onCommit: viewModel.searchProduct)
-                .padding(8)
-                .background(Color.white)
-                .cornerRadius(8)
-            }
-            .padding(16)
-            .background(Color("primary-light"))
-            
-            ZStack {
-                if viewModel.isLoading {
-                    loaderView
+        NavigationView {
+            VStack(spacing: 0) {
+                VStack {
+                    TextField("Search here", text: $viewModel.searchText, onCommit: viewModel.searchProduct)
+                        .padding(8)
+                        .background(Color.white)
+                        .cornerRadius(8)
                 }
+                .padding(16)
+                .background(Color("primary-light"))
                 
-                ScrollView {
-                    VStack(spacing: 12) {
-                        ForEach(viewModel.products, id: \.id) { product in
-                            SearchProductView(product: product)
-                        }
+                ZStack {
+                    if viewModel.isLoading {
+                        loaderView
                     }
-                    .padding(12)
+                    
+                    ScrollView {
+                        VStack(spacing: 12) {
+                            ForEach(viewModel.products, id: \.id) { product in
+                                NavigationLink(destination: ProductDetailView(viewModel: .init(productId: product.id))) {
+                                    SearchProductView(product: product)
+                                }
+                            }
+                        }
+                        .padding(12)
+                    }
                 }
             }
+            .navigationTitle("Buscar")
+            .navigationBarHidden(true)
         }
     }
     
