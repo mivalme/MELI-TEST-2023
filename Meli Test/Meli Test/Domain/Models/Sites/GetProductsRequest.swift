@@ -8,9 +8,11 @@
 import Foundation
 
 struct GetProductsRequest: Codable {
-    let query: String
+    let query: String?
+    let category: String?
     
     enum CodingKeys: String, CodingKey {
         case query = "q"
+        case category
     }
 }

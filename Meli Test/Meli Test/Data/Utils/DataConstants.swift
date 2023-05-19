@@ -9,8 +9,8 @@ import Foundation
 
 struct DataConstants {
     struct Request {
-        static let contentType = "Content-Type"
         static let applicationJson = "application/json"
+        static let contentType = "Content-Type"
     }
     
     struct Environments {
@@ -18,20 +18,23 @@ struct DataConstants {
     }
     
     enum ContentOrigin: String {
-        case sites = "sites/MCO/"
         case items = "items"
+        case sites = "sites/MCO/"
     }
     
     enum Endpoint {
-        case search
+        case categories
         case items
+        case search
         
         var url: String {
             switch self {
-            case .search:
-                return ContentOrigin.sites.rawValue + "search"
+            case .categories:
+                return ContentOrigin.sites.rawValue + "categories"
             case .items:
                 return ContentOrigin.items.rawValue
+            case .search:
+                return ContentOrigin.sites.rawValue + "search"
             }
         }
     }
