@@ -21,13 +21,19 @@ struct SearchProductView: View {
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(product.title)
+                    .foregroundColor(.black)
                     .lineLimit(3)
+                    .multilineTextAlignment(.leading)
                 
                 Text("$ \(product.price)")
+                    .foregroundColor(.black)
                     .font(.title)
                 
-                Text("\(product.installments.quantity)x $ \(Int(product.installments.amount)) \(product.installments.rate == 0 ? "sin interés" : "")")
-                    .foregroundColor(product.installments.rate == 0 ? Color("success") : .black)
+                if let installments = product.installments {
+                    Text("\(installments.quantity)x $ \(Int(installments.amount)) \(installments.rate == 0 ? "sin interés" : "")")
+                        .foregroundColor(installments.rate == 0 ? Color("success") : .black)
+                        .multilineTextAlignment(.leading)
+                }
             }
             
             Spacer()

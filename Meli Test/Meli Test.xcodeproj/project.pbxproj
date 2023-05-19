@@ -28,6 +28,13 @@
 		F06F62F12A16EA82007FF437 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F06F62F02A16EA82007FF437 /* Lottie */; };
 		F06F62F42A16EAA7007FF437 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62F32A16EAA7007FF437 /* LottieView.swift */; };
 		F06F63002A16EF06007FF437 /* yellow-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F06F62FF2A16EF06007FF437 /* yellow-loader.json */; };
+		F06F63032A16FF06007FF437 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63022A16FF06007FF437 /* ProductDetailView.swift */; };
+		F06F63052A170526007FF437 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63042A170526007FF437 /* ProductDetailViewModel.swift */; };
+		F06F63082A170945007FF437 /* ItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63072A170945007FF437 /* ItemsUseCase.swift */; };
+		F06F630A2A170953007FF437 /* ItemsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63092A170953007FF437 /* ItemsUseCaseProtocol.swift */; };
+		F06F630D2A1709EA007FF437 /* GetItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F630C2A1709EA007FF437 /* GetItemsRequest.swift */; };
+		F06F630F2A170A1D007FF437 /* GetItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F630E2A170A1D007FF437 /* GetItemsResponse.swift */; };
+		F06F63112A1747EB007FF437 /* UnknownCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63102A1747EB007FF437 /* UnknownCase.swift */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
 		F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */; };
@@ -73,6 +80,13 @@
 		F06F62EE2A169AE0007FF437 /* Meli-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meli-Test-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F06F62F32A16EAA7007FF437 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F06F62FF2A16EF06007FF437 /* yellow-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "yellow-loader.json"; sourceTree = "<group>"; };
+		F06F63022A16FF06007FF437 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		F06F63042A170526007FF437 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		F06F63072A170945007FF437 /* ItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsUseCase.swift; sourceTree = "<group>"; };
+		F06F63092A170953007FF437 /* ItemsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		F06F630C2A1709EA007FF437 /* GetItemsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetItemsRequest.swift; sourceTree = "<group>"; };
+		F06F630E2A170A1D007FF437 /* GetItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetItemsResponse.swift; sourceTree = "<group>"; };
+		F06F63102A1747EB007FF437 /* UnknownCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownCase.swift; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
 		F0C65F732A13EBEF00D079DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F028309F2A151EAB0056A2D3 /* Encodable.swift */,
+				F06F63102A1747EB007FF437 /* UnknownCase.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +200,7 @@
 		F02830A52A152D050056A2D3 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				F06F63012A16FEF3007FF437 /* Product Detail */,
 				F02830A62A152F660056A2D3 /* Search Engine */,
 			);
 			path = Stories;
@@ -220,6 +236,7 @@
 		F06F62D32A15E262007FF437 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F06F630B2A1709D4007FF437 /* Items */,
 				F06F62E32A1682F1007FF437 /* Product */,
 				F06F62DE2A15E426007FF437 /* Search */,
 			);
@@ -231,6 +248,7 @@
 			children = (
 				F06F62DA2A15E2C5007FF437 /* BaseUseCase.swift */,
 				F06F62DC2A15E2D5007FF437 /* BaseUseCaseProtocol.swift */,
+				F06F63062A170936007FF437 /* Items */,
 				F06F62D52A15E295007FF437 /* Search */,
 			);
 			path = "Use Cases";
@@ -277,6 +295,33 @@
 				F06F62F32A16EAA7007FF437 /* LottieView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F06F63012A16FEF3007FF437 /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F06F63022A16FF06007FF437 /* ProductDetailView.swift */,
+				F06F63042A170526007FF437 /* ProductDetailViewModel.swift */,
+			);
+			path = "Product Detail";
+			sourceTree = "<group>";
+		};
+		F06F63062A170936007FF437 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				F06F63072A170945007FF437 /* ItemsUseCase.swift */,
+				F06F63092A170953007FF437 /* ItemsUseCaseProtocol.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		F06F630B2A1709D4007FF437 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				F06F630C2A1709EA007FF437 /* GetItemsRequest.swift */,
+				F06F630E2A170A1D007FF437 /* GetItemsResponse.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		F0C65F632A13EBEE00D079DA = {
@@ -483,22 +528,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */,
+				F06F630A2A170953007FF437 /* ItemsUseCaseProtocol.swift in Sources */,
 				F06F62F42A16EAA7007FF437 /* LottieView.swift in Sources */,
 				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
 				F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */,
 				F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */,
 				F06F62ED2A16994E007FF437 /* SearchProductView.swift in Sources */,
+				F06F630D2A1709EA007FF437 /* GetItemsRequest.swift in Sources */,
+				F06F63112A1747EB007FF437 /* UnknownCase.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
 				F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */,
+				F06F63082A170945007FF437 /* ItemsUseCase.swift in Sources */,
 				F06F62E02A15E436007FF437 /* GetProductsRequest.swift in Sources */,
 				F02830A32A151F080056A2D3 /* DataConstants.swift in Sources */,
 				F06F62E52A1682FF007FF437 /* Product.swift in Sources */,
+				F06F63052A170526007FF437 /* ProductDetailViewModel.swift in Sources */,
 				F06F62D72A15E2A2007FF437 /* SearchUseCase.swift in Sources */,
 				F02830952A151BBC0056A2D3 /* BaseService.swift in Sources */,
 				F06F62DD2A15E2D5007FF437 /* BaseUseCaseProtocol.swift in Sources */,
 				F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */,
+				F06F630F2A170A1D007FF437 /* GetItemsResponse.swift in Sources */,
 				F06F62DB2A15E2C5007FF437 /* BaseUseCase.swift in Sources */,
 				F06F62D92A15E2A9007FF437 /* SearchUseCaseProtocol.swift in Sources */,
+				F06F63032A16FF06007FF437 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

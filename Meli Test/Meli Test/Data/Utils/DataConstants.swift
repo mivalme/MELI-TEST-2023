@@ -19,15 +19,19 @@ struct DataConstants {
     
     enum ContentOrigin: String {
         case sites = "sites/MCO/"
+        case items = "items"
     }
     
     enum Endpoint {
         case search
+        case items
         
         var url: String {
             switch self {
             case .search:
                 return ContentOrigin.sites.rawValue + "search"
+            case .items:
+                return ContentOrigin.items.rawValue
             }
         }
     }
