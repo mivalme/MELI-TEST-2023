@@ -18,7 +18,7 @@ struct DataConstants {
     }
     
     enum ContentOrigin: String {
-        case sites = "sites/MLA/"
+        case sites = "sites/MCO/"
     }
     
     enum Endpoint {

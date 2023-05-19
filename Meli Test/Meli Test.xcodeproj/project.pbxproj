@@ -23,6 +23,11 @@
 		F06F62E02A15E436007FF437 /* GetProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62DF2A15E436007FF437 /* GetProductsRequest.swift */; };
 		F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62E12A1682B1007FF437 /* GetProductsResponse.swift */; };
 		F06F62E52A1682FF007FF437 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62E42A1682FF007FF437 /* Product.swift */; };
+		F06F62E82A16991A007FF437 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F06F62E72A16991A007FF437 /* Kingfisher */; };
+		F06F62ED2A16994E007FF437 /* SearchProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62EC2A16994E007FF437 /* SearchProductView.swift */; };
+		F06F62F12A16EA82007FF437 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F06F62F02A16EA82007FF437 /* Lottie */; };
+		F06F62F42A16EAA7007FF437 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F62F32A16EAA7007FF437 /* LottieView.swift */; };
+		F06F63002A16EF06007FF437 /* yellow-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F06F62FF2A16EF06007FF437 /* yellow-loader.json */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
 		F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */; };
@@ -64,6 +69,10 @@
 		F06F62DF2A15E436007FF437 /* GetProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequest.swift; sourceTree = "<group>"; };
 		F06F62E12A1682B1007FF437 /* GetProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
 		F06F62E42A1682FF007FF437 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F06F62EC2A16994E007FF437 /* SearchProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductView.swift; sourceTree = "<group>"; };
+		F06F62EE2A169AE0007FF437 /* Meli-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meli-Test-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F06F62F32A16EAA7007FF437 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F06F62FF2A16EF06007FF437 /* yellow-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "yellow-loader.json"; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
 		F0C65F732A13EBEF00D079DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06F62E82A16991A007FF437 /* Kingfisher in Frameworks */,
 				F02830922A151B8A0056A2D3 /* Alamofire in Frameworks */,
+				F06F62F12A16EA82007FF437 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +175,7 @@
 		F02830A42A152CD10056A2D3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F06F62F22A16EA8F007FF437 /* Components */,
 				F02830AB2A153BDF0056A2D3 /* Assets */,
 				F02830A52A152D050056A2D3 /* Stories */,
 			);
@@ -181,6 +193,7 @@
 		F02830A62A152F660056A2D3 /* Search Engine */ = {
 			isa = PBXGroup;
 			children = (
+				F06F62E92A169923007FF437 /* Views */,
 				F02830A72A152F780056A2D3 /* SearchEngineView.swift */,
 				F02830A92A15306C0056A2D3 /* SearchEngineViewModel.swift */,
 			);
@@ -249,6 +262,23 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		F06F62E92A169923007FF437 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62EC2A16994E007FF437 /* SearchProductView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F06F62F22A16EA8F007FF437 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F06F62FF2A16EF06007FF437 /* yellow-loader.json */,
+				F06F62F32A16EAA7007FF437 /* LottieView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F0C65F632A13EBEE00D079DA = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +302,7 @@
 		F0C65F6E2A13EBEE00D079DA /* Meli Test */ = {
 			isa = PBXGroup;
 			children = (
+				F06F62EE2A169AE0007FF437 /* Meli-Test-Info.plist */,
 				F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */,
 				F028309D2A151E870056A2D3 /* Common */,
 				F028308E2A151AB90056A2D3 /* Data */,
@@ -327,6 +358,8 @@
 			name = "Meli Test";
 			packageProductDependencies = (
 				F02830912A151B8A0056A2D3 /* Alamofire */,
+				F06F62E72A16991A007FF437 /* Kingfisher */,
+				F06F62F02A16EA82007FF437 /* Lottie */,
 			);
 			productName = "Meli Test";
 			productReference = F0C65F6C2A13EBEE00D079DA /* Meli Test.app */;
@@ -402,6 +435,8 @@
 			mainGroup = F0C65F632A13EBEE00D079DA;
 			packageReferences = (
 				F02830902A151B8A0056A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F06F62E62A16991A007FF437 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F06F62EF2A16EA82007FF437 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = F0C65F6D2A13EBEE00D079DA /* Products */;
 			projectDirPath = "";
@@ -419,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06F63002A16EF06007FF437 /* yellow-loader.json in Resources */,
 				F02830AD2A153BFF0056A2D3 /* Colors.xcassets in Resources */,
 				F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */,
 				F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */,
@@ -447,9 +483,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F02830A02A151EAB0056A2D3 /* Encodable.swift in Sources */,
+				F06F62F42A16EAA7007FF437 /* LottieView.swift in Sources */,
 				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
 				F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */,
 				F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */,
+				F06F62ED2A16994E007FF437 /* SearchProductView.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
 				F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */,
 				F06F62E02A15E436007FF437 /* GetProductsRequest.swift in Sources */,
@@ -617,6 +655,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Meli Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meli-Test-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -653,6 +692,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Meli Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meli-Test-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -814,6 +854,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F06F62E62A16991A007FF437 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		F06F62EF2A16EA82007FF437 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -821,6 +877,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F02830902A151B8A0056A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F06F62E72A16991A007FF437 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F06F62E62A16991A007FF437 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F06F62F02A16EA82007FF437 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F06F62EF2A16EA82007FF437 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

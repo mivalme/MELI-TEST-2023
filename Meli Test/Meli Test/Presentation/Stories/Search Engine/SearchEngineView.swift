@@ -13,20 +13,34 @@ struct SearchEngineView: View {
     var body: some View {
         VStack {
             VStack {
-                TextField("Search here", text: $viewModel.searchText)
-                    .padding(8)
-                    .background(Color.white)
-                    .cornerRadius(8)
-                    .onChange(of: viewModel.searchText) { _ in
-                        viewModel.searchProduct()
-                    }
+                TextField("Search here", text: $viewModel.searchText, onCommit: viewModel.searchProduct)
+                .padding(8)
+                .background(Color.white)
+                .cornerRadius(8)
             }
             .padding(16)
             .background(Color("primary-light"))
             
-            Spacer()
+            ZStack {
+                if viewModel.isLoading {
+                    loaderView
+                }
+                
+                ScrollView {
+                    VStack(spacing: 12) {
+                        ForEach(viewModel.products, id: \.id) { product in
+                            SearchProductView(product: product)
+                        }
+                    }
+                    .padding(12)
+                }
+            }
         }
-        
+    }
+    
+    private var loaderView: some View {
+        LottieView(animation: "yellow-loader", loopMode: .loop)
+            .frame(width: 150, height: 150)
     }
 }
 
