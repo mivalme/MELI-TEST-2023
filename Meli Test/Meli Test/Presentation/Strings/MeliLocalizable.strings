@@ -1,0 +1,19 @@
+/* 
+  MeliLocalizable.strings
+  Meli Test
+
+  Created by Miguel Valcárcel on 19/05/23.
+  
+*/
+
+"mercadopago_message" = "Llévalo con MercadoPago";
+"free_shipping_message" = "Envío gratis";
+"sold_quantity_message" = "%d vendidos";
+"available_quantity_message" = "%d disponibles";
+"product_price" = "$ %@";
+"installments_info" = "%dx %@ %@";
+"no_interest_message" = "sin interés";
+"search_placeholder" = "Ej. Play Station 5";
+"main_screen_instructions" = "Usa la barra de arriba para buscar un producto, o selecciona una categoría.";
+"search_nav_title" = "Buscar";
+"image_url" = "http://http2.mlstatic.com/D_%@-O.jpg";

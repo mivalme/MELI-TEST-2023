@@ -37,6 +37,11 @@
 		F06F63112A1747EB007FF437 /* UnknownCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F63102A1747EB007FF437 /* UnknownCase.swift */; };
 		F07E85002A180D1000CE22FB /* GetCategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07E84FF2A180D1000CE22FB /* GetCategoriesResponse.swift */; };
 		F07E85042A18114500CE22FB /* ProductCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07E85032A18114500CE22FB /* ProductCategoryView.swift */; };
+		F07E85072A181DD600CE22FB /* MeliColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07E85062A181DD600CE22FB /* MeliColorScheme.swift */; };
+		F07E850A2A1821E300CE22FB /* MeliLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07E85092A1821E300CE22FB /* MeliLocalizables.swift */; };
+		F07E850C2A18317400CE22FB /* MeliLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F07E850B2A18317400CE22FB /* MeliLocalizable.strings */; };
+		F0ADF28B2A183877003D0288 /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADF28A2A183877003D0288 /* Integer.swift */; };
+		F0ADF28D2A183ADD003D0288 /* MeliAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADF28C2A183ADD003D0288 /* MeliAssets.swift */; };
 		F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */; };
 		F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F732A13EBEF00D079DA /* Assets.xcassets */; };
 		F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */; };
@@ -91,9 +96,14 @@
 		F06F63102A1747EB007FF437 /* UnknownCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownCase.swift; sourceTree = "<group>"; };
 		F07E84FF2A180D1000CE22FB /* GetCategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesResponse.swift; sourceTree = "<group>"; };
 		F07E85032A18114500CE22FB /* ProductCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryView.swift; sourceTree = "<group>"; };
+		F07E85062A181DD600CE22FB /* MeliColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliColorScheme.swift; sourceTree = "<group>"; };
+		F07E85092A1821E300CE22FB /* MeliLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliLocalizables.swift; sourceTree = "<group>"; };
+		F07E850B2A18317400CE22FB /* MeliLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = MeliLocalizable.strings; sourceTree = "<group>"; };
+		F0ADF28A2A183877003D0288 /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		F0ADF28C2A183ADD003D0288 /* MeliAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliAssets.swift; sourceTree = "<group>"; };
 		F0C65F6C2A13EBEE00D079DA /* Meli Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meli Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli_TestApp.swift; sourceTree = "<group>"; };
-		F0C65F732A13EBEF00D079DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0C65F732A13EBEF00D079DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meli_Test.entitlements; sourceTree = "<group>"; };
 		F0C65F772A13EBEF00D079DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0C65F7D2A13EBEF00D079DA /* Meli TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meli TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +189,7 @@
 			children = (
 				F028309F2A151EAB0056A2D3 /* Encodable.swift */,
 				F06F63102A1747EB007FF437 /* UnknownCase.swift */,
+				F0ADF28A2A183877003D0288 /* Integer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,9 +205,11 @@
 		F02830A42A152CD10056A2D3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F06F62F22A16EA8F007FF437 /* Components */,
 				F02830AB2A153BDF0056A2D3 /* Assets */,
+				F06F62F22A16EA8F007FF437 /* Components */,
 				F02830A52A152D050056A2D3 /* Stories */,
+				F07E85082A1821C800CE22FB /* Strings */,
+				F07E85052A181DC700CE22FB /* Themes */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -223,7 +236,9 @@
 		F02830AB2A153BDF0056A2D3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F0C65F732A13EBEF00D079DA /* Assets.xcassets */,
 				F02830AC2A153BFF0056A2D3 /* Colors.xcassets */,
+				F0ADF28C2A183ADD003D0288 /* MeliAssets.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -330,6 +345,23 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		F07E85052A181DC700CE22FB /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				F07E85062A181DD600CE22FB /* MeliColorScheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		F07E85082A1821C800CE22FB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				F07E85092A1821E300CE22FB /* MeliLocalizables.swift */,
+				F07E850B2A18317400CE22FB /* MeliLocalizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		F0C65F632A13EBEE00D079DA = {
 			isa = PBXGroup;
 			children = (
@@ -353,14 +385,13 @@
 		F0C65F6E2A13EBEE00D079DA /* Meli Test */ = {
 			isa = PBXGroup;
 			children = (
+				F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */,
 				F06F62EE2A169AE0007FF437 /* Meli-Test-Info.plist */,
 				F0C65F6F2A13EBEE00D079DA /* Meli_TestApp.swift */,
 				F028309D2A151E870056A2D3 /* Common */,
 				F028308E2A151AB90056A2D3 /* Data */,
 				F06F62D22A15E250007FF437 /* Domain */,
 				F02830A42A152CD10056A2D3 /* Presentation */,
-				F0C65F732A13EBEF00D079DA /* Assets.xcassets */,
-				F0C65F752A13EBEF00D079DA /* Meli_Test.entitlements */,
 				F0C65F762A13EBEF00D079DA /* Preview Content */,
 			);
 			path = "Meli Test";
@@ -506,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F06F63002A16EF06007FF437 /* yellow-loader.json in Resources */,
+				F07E850C2A18317400CE22FB /* MeliLocalizable.strings in Resources */,
 				F02830AD2A153BFF0056A2D3 /* Colors.xcassets in Resources */,
 				F0C65F782A13EBEF00D079DA /* Preview Assets.xcassets in Resources */,
 				F0C65F742A13EBEF00D079DA /* Assets.xcassets in Resources */,
@@ -539,8 +571,10 @@
 				F028309C2A151E060056A2D3 /* RemoteRepository.swift in Sources */,
 				F02830A82A152F780056A2D3 /* SearchEngineView.swift in Sources */,
 				F06F62E22A1682B1007FF437 /* GetProductsResponse.swift in Sources */,
+				F07E85072A181DD600CE22FB /* MeliColorScheme.swift in Sources */,
 				F06F62ED2A16994E007FF437 /* SearchProductView.swift in Sources */,
 				F06F630D2A1709EA007FF437 /* GetItemsRequest.swift in Sources */,
+				F0ADF28B2A183877003D0288 /* Integer.swift in Sources */,
 				F06F63112A1747EB007FF437 /* UnknownCase.swift in Sources */,
 				F0C65F702A13EBEE00D079DA /* Meli_TestApp.swift in Sources */,
 				F02830AA2A15306C0056A2D3 /* SearchEngineViewModel.swift in Sources */,
@@ -555,8 +589,10 @@
 				F06F62DD2A15E2D5007FF437 /* BaseUseCaseProtocol.swift in Sources */,
 				F07E85042A18114500CE22FB /* ProductCategoryView.swift in Sources */,
 				F02830972A151BEB0056A2D3 /* ServiceProtocol.swift in Sources */,
+				F07E850A2A1821E300CE22FB /* MeliLocalizables.swift in Sources */,
 				F06F630F2A170A1D007FF437 /* GetItemsResponse.swift in Sources */,
 				F06F62DB2A15E2C5007FF437 /* BaseUseCase.swift in Sources */,
+				F0ADF28D2A183ADD003D0288 /* MeliAssets.swift in Sources */,
 				F06F62D92A15E2A9007FF437 /* SitesUseCaseProtocol.swift in Sources */,
 				F06F63032A16FF06007FF437 /* ProductDetailView.swift in Sources */,
 			);

@@ -13,7 +13,8 @@ struct SearchProductView: View {
     
     var body: some View {
         HStack(spacing: 16) {
-            KFImage(URL(string: "http://http2.mlstatic.com/D_\(product.thumbnailId)-O.jpg"))
+            KFImage(URL(string: String(format: MeliLocalizables.imageUrl,
+                                       arguments: [product.thumbnailId])))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 120, height: 120)
@@ -25,13 +26,17 @@ struct SearchProductView: View {
                     .lineLimit(3)
                     .multilineTextAlignment(.leading)
                 
-                Text("$ \(product.price)")
+                Text(String(format: MeliLocalizables.productPrice,
+                            arguments: [product.price.withFormat]))
                     .foregroundColor(.black)
                     .font(.title)
                 
                 if let installments = product.installments {
-                    Text("\(installments.quantity)x $ \(Int(installments.amount)) \(installments.rate == 0 ? "sin interés" : "")")
-                        .foregroundColor(installments.rate == 0 ? Color("success") : .black)
+                    Text(String(format: MeliLocalizables.installmentsInfo,
+                                arguments: [installments.quantity,
+                                            Int(installments.amount).withFormat,
+                                            installments.rate == 0 ? MeliLocalizables.noInterestMessage : String()]))
+                        .foregroundColor(installments.rate == 0 ? MeliColorScheme.success : .black)
                         .multilineTextAlignment(.leading)
                 }
             }
