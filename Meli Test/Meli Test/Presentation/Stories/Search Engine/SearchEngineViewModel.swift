@@ -9,19 +9,39 @@ import Foundation
 
 class SearchEngineViewModel: ObservableObject {
     @Published var searchText: String = ""
+    @Published var categories: [ProductCategory] = []
     @Published var products: [Product] = []
     @Published var isLoading: Bool = false
     
-    private let searchUseCase: SearchUseCaseProtocol
+    private let sitesUseCase: SitesUseCaseProtocol
     
-    init(searchUseCase: SearchUseCaseProtocol = SearchUseCase()) {
-        self.searchUseCase = searchUseCase
+    init(searchUseCase: SitesUseCaseProtocol = SitesUseCase()) {
+        self.sitesUseCase = searchUseCase
+        getCategories()
     }
     
-    func searchProduct() {
+    func getCategories() {
+        isLoading = true
+        sitesUseCase.getCategories { [weak self] response in
+            guard let self = self else { return }
+            switch response {
+            case .success(let data):
+                self.categories = data
+            default:
+                break
+            }
+            self.isLoading = false
+        }
+    }
+    
+    func searchProduct(categoryId: String? = nil) {
+        if categoryId?.isEmpty == false {
+            searchText = ""
+        }
         isLoading = true
         products = []
-        searchUseCase.getProducts(request: GetProductsRequest(query: searchText)) { [weak self] response in
+        sitesUseCase.getProducts(request: GetProductsRequest(query: searchText,
+                                                             category: categoryId)) { [weak self] response in
             guard let self = self else { return }
             switch response {
             case .success(let data):
