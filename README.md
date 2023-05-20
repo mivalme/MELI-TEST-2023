@@ -6,7 +6,7 @@ _By Miguel Angel Valcárcel Mendivelso_
 
 ## Screenshots
 
-<img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/9dd6a36a-b31a-44ce-9474-ab33aaf0ad7b" width="250"> <img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/d9b6fe0a-05f1-4e50-b2de-84be56777bf7" width="250"> <img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/698dfec5-0e3f-4344-abcd-3c0d746d7315" width="250"> 
+<img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/7a0e5896-2bfa-457a-80fa-0a7488554e15" width="250"> <img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/4f27b0c7-e716-414e-877e-f7469179d11c" width="250"> <img src="https://github.com/mivalme/MELI-TEST-2023/assets/33386326/be792214-70bd-41b4-bc04-d4011dfa10ee" width="250"> 
 
 ## Let's start 🚀
 
