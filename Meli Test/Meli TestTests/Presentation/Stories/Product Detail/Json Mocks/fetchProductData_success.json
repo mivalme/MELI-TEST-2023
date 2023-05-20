@@ -1,0 +1,792 @@
+[{
+    "code": 200,
+    "body": {
+        "id": "MCO1147430217",
+        "site_id": "MCO",
+        "title": "Sony Playstation 5 825gb God Of War Ragnarok Bundle Color  Blanco Y Negro",
+        "subtitle": null,
+        "seller_id": 783790319,
+        "category_id": "MCO2931",
+        "official_store_id": null,
+        "price": 3214900,
+        "base_price": 3214900,
+        "original_price": 3719900,
+        "currency_id": "COP",
+        "initial_quantity": 90,
+        "available_quantity": 1,
+        "sold_quantity": 50,
+        "sale_terms": [{
+            "id": "WARRANTY_TIME",
+            "name": "Tiempo de garantía",
+            "value_id": null,
+            "value_name": "6 meses",
+            "value_struct": {
+                "number": 6,
+                "unit": "meses"
+            },
+            "values": [{
+                "id": null,
+                "name": "6 meses",
+                "struct": {
+                    "number": 6,
+                    "unit": "meses"
+                }
+            }],
+            "value_type": "number_unit"
+        }, {
+            "id": "WARRANTY_TYPE",
+            "name": "Tipo de garantía",
+            "value_id": "2230280",
+            "value_name": "Garantía del vendedor",
+            "value_struct": null,
+            "values": [{
+                "id": "2230280",
+                "name": "Garantía del vendedor",
+                "struct": null
+            }],
+            "value_type": "list"
+        }],
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "start_time": "2022-12-17T18:22:06.000Z",
+        "stop_time": "2042-12-12T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://articulo.mercadolibre.com.co/MCO-1147430217-sony-playstation-5-825gb-god-of-war-ragnarok-bundle-color-blanco-y-negro-_JM",
+        "thumbnail_id": "714411-MLA52696806401_122022",
+        "thumbnail": "http://http2.mlstatic.com/D_714411-MLA52696806401_122022-I.jpg",
+        "secure_thumbnail": "https://http2.mlstatic.com/D_714411-MLA52696806401_122022-I.jpg",
+        "pictures": [{
+            "id": "714411-MLA52696806401_122022",
+            "url": "http://http2.mlstatic.com/D_714411-MLA52696806401_122022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_714411-MLA52696806401_122022-O.jpg",
+            "size": "500x253",
+            "max_size": "608x308",
+            "quality": ""
+        }, {
+            "id": "802679-MLA52696885129_122022",
+            "url": "http://http2.mlstatic.com/D_802679-MLA52696885129_122022-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_802679-MLA52696885129_122022-O.jpg",
+            "size": "500x420",
+            "max_size": "637x536",
+            "quality": ""
+        }, {
+            "id": "860780-MLA54955392867_042023",
+            "url": "http://http2.mlstatic.com/D_860780-MLA54955392867_042023-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_860780-MLA54955392867_042023-O.jpg",
+            "size": "375x500",
+            "max_size": "768x1024",
+            "quality": ""
+        }, {
+            "id": "817817-MLA54955377123_042023",
+            "url": "http://http2.mlstatic.com/D_817817-MLA54955377123_042023-O.jpg",
+            "secure_url": "https://http2.mlstatic.com/D_817817-MLA54955377123_042023-O.jpg",
+            "size": "500x375",
+            "max_size": "1024x768",
+            "quality": ""
+        }],
+        "video_id": null,
+        "descriptions": [],
+        "accepts_mercadopago": true,
+        "non_mercado_pago_payment_methods": [],
+        "shipping": {
+            "mode": "me2",
+            "methods": [],
+            "tags": ["self_service_in", "mandatory_free_shipping"],
+            "dimensions": null,
+            "local_pick_up": true,
+            "free_shipping": true,
+            "logistic_type": "cross_docking",
+            "store_pick_up": false
+        },
+        "international_delivery_mode": "none",
+        "seller_address": {
+            "city": {
+                "id": "TUNPQ1BVRTg0NTU0",
+                "name": "Puente Aranda"
+            },
+            "state": {
+                "id": "CO-DC",
+                "name": "Bogotá D.C."
+            },
+            "country": {
+                "id": "CO",
+                "name": "Colombia"
+            },
+            "search_location": {
+                "city": {
+                    "id": "TUNPQ1BVRTg0NTU0",
+                    "name": "Puente Aranda"
+                },
+                "state": {
+                    "id": "TUNPUEJPR1gxMDljZA",
+                    "name": "Bogotá D.C."
+                }
+            },
+            "id": 1240581826
+        },
+        "seller_contact": null,
+        "location": {},
+        "coverage_areas": [],
+        "attributes": [{
+            "id": "ACCESSORIES_INCLUDED",
+            "name": "Accesorios incluidos",
+            "value_id": null,
+            "value_name": "1 dock,1 cable de alimentación CA,1 cable HDMI,1 cable USB,1 material impreso",
+            "value_struct": null,
+            "values": [{
+                "id": "8920016",
+                "name": "1 dock",
+                "struct": null
+            }, {
+                "id": "8294230",
+                "name": "1 cable de alimentación CA",
+                "struct": null
+            }, {
+                "id": "8906382",
+                "name": "1 cable HDMI",
+                "struct": null
+            }, {
+                "id": "8850573",
+                "name": "1 cable USB",
+                "struct": null
+            }, {
+                "id": "8294231",
+                "name": "1 material impreso",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "BLUETOOTH_VERSION",
+            "name": "Versión de Bluetooth",
+            "value_id": "9929865",
+            "value_name": "5.1",
+            "value_struct": null,
+            "values": [{
+                "id": "9929865",
+                "name": "5.1",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "995",
+            "value_name": "Sony",
+            "value_struct": null,
+            "values": [{
+                "id": "995",
+                "name": "Sony",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "CAPACITY",
+            "name": "Capacidad",
+            "value_id": "9087661",
+            "value_name": "825 GB",
+            "value_struct": {
+                "number": 825,
+                "unit": "GB"
+            },
+            "values": [{
+                "id": "9087661",
+                "name": "825 GB",
+                "struct": {
+                    "number": 825,
+                    "unit": "GB"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "COLOR",
+            "name": "Color",
+            "value_id": "59793",
+            "value_name": "Blanco/Negro",
+            "value_struct": null,
+            "values": [{
+                "id": "59793",
+                "name": "Blanco/Negro",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "CONSOLE_TYPE",
+            "name": "Tipo de consola",
+            "value_id": "6827496",
+            "value_name": "De sobremesa",
+            "value_struct": null,
+            "values": [{
+                "id": "6827496",
+                "name": "De sobremesa",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "CONTROLLERS_CONNECTIVITIES",
+            "name": "Conectividades de los controles",
+            "value_id": "6827501",
+            "value_name": "Inalámbrico",
+            "value_struct": null,
+            "values": [{
+                "id": "6827501",
+                "name": "Inalámbrico",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "list"
+        }, {
+            "id": "CONTROLLERS_NUMBER_INCLUDED",
+            "name": "Cantidad de controles incluidos",
+            "value_id": "7673783",
+            "value_name": "1",
+            "value_struct": null,
+            "values": [{
+                "id": "7673783",
+                "name": "1",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "CPU",
+            "name": "CPU",
+            "value_id": "10387182",
+            "value_name": "AMD Ryzen Zen 2",
+            "value_struct": null,
+            "values": [{
+                "id": "10387182",
+                "name": "AMD Ryzen Zen 2",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "CPU_CORES_NUMBER",
+            "name": "Cantidad de núcleos de CPU",
+            "value_id": "2549447",
+            "value_name": "8",
+            "value_struct": null,
+            "values": [{
+                "id": "2549447",
+                "name": "8",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "DEPTH",
+            "name": "Profundidad",
+            "value_id": "3112949",
+            "value_name": "260 mm",
+            "value_struct": {
+                "number": 260,
+                "unit": "mm"
+            },
+            "values": [{
+                "id": "3112949",
+                "name": "260 mm",
+                "struct": {
+                    "number": 260,
+                    "unit": "mm"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "EDITION",
+            "name": "Edición",
+            "value_id": "13757238",
+            "value_name": "God of War Ragnarok Bundle",
+            "value_struct": null,
+            "values": [{
+                "id": "13757238",
+                "name": "God of War Ragnarok Bundle",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "GAMES_NUMBER_INCLUDED",
+            "name": "Cantidad de juegos incluidos",
+            "value_id": "7958401",
+            "value_name": "2",
+            "value_struct": null,
+            "values": [{
+                "id": "7958401",
+                "name": "2",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "GAME_FORMATS",
+            "name": "Formatos de juegos",
+            "value_id": null,
+            "value_name": "Digital,Ultra HD Blu-ray,Blu-ray,DVD",
+            "value_struct": null,
+            "values": [{
+                "id": "7667258",
+                "name": "Digital",
+                "struct": null
+            }, {
+                "id": "7751240",
+                "name": "Ultra HD Blu-ray",
+                "struct": null
+            }, {
+                "id": "96342",
+                "name": "Blu-ray",
+                "struct": null
+            }, {
+                "id": "96340",
+                "name": "DVD",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "GAME_TITLES_INCLUDED",
+            "name": "Títulos de juegos incluidos",
+            "value_id": null,
+            "value_name": "God of War Ragnarok,Astro's Playroom",
+            "value_struct": null,
+            "values": [{
+                "id": "13757237",
+                "name": "God of War Ragnarok",
+                "struct": null
+            }, {
+                "id": "11202739",
+                "name": "Astro's Playroom",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "GPU",
+            "name": "GPU",
+            "value_id": "7720036",
+            "value_name": "AMD Radeon",
+            "value_struct": null,
+            "values": [{
+                "id": "7720036",
+                "name": "AMD Radeon",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "GTIN",
+            "name": "Código universal de producto",
+            "value_id": null,
+            "value_name": "711719555360",
+            "value_struct": null,
+            "values": [{
+                "id": null,
+                "name": "711719555360",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "HEIGHT",
+            "name": "Altura",
+            "value_id": "6012735",
+            "value_name": "104 mm",
+            "value_struct": {
+                "number": 104,
+                "unit": "mm"
+            },
+            "values": [{
+                "id": "6012735",
+                "name": "104 mm",
+                "struct": {
+                    "number": 104,
+                    "unit": "mm"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "INCLUDES_CONTROLLERS",
+            "name": "Incluye controles",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }, {
+            "id": "INCLUDES_GAMES",
+            "name": "Incluye juegos",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }, {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [{
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "list"
+        }, {
+            "id": "LINE",
+            "name": "Línea",
+            "value_id": "312177",
+            "value_name": "PlayStation",
+            "value_struct": null,
+            "values": [{
+                "id": "312177",
+                "name": "PlayStation",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "MAIN_COLOR",
+            "name": "Color principal",
+            "value_id": "2450308",
+            "value_name": "Blanco",
+            "value_struct": null,
+            "values": [{
+                "id": "2450308",
+                "name": "Blanco",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "list"
+        }, {
+            "id": "MAX_FPS_NUMBER",
+            "name": "Cantidad máxima de FPS",
+            "value_id": "11337236",
+            "value_name": "120",
+            "value_struct": null,
+            "values": [{
+                "id": "11337236",
+                "name": "120",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "MAX_OUTPUT_VIDEO_RESOLUTION",
+            "name": "Resolución máxima de salida de video",
+            "value_id": "7673788",
+            "value_name": "3840 px x 2160 px",
+            "value_struct": null,
+            "values": [{
+                "id": "7673788",
+                "name": "3840 px x 2160 px",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "MEMORY_TYPES",
+            "name": "Tipos de memoria",
+            "value_id": "7667114",
+            "value_name": "GDDR6",
+            "value_struct": null,
+            "values": [{
+                "id": "7667114",
+                "name": "GDDR6",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "list"
+        }, {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": "9087659",
+            "value_name": "PlayStation 5",
+            "value_struct": null,
+            "values": [{
+                "id": "9087659",
+                "name": "PlayStation 5",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "MPN",
+            "name": "MPN",
+            "value_id": null,
+            "value_name": "CFI-1115A,1000032624,P-27419132-B",
+            "value_struct": null,
+            "values": [{
+                "id": "11516855",
+                "name": "CFI-1115A",
+                "struct": null
+            }, {
+                "id": "13757250",
+                "name": "1000032624",
+                "struct": null
+            }, {
+                "id": "13757251",
+                "name": "P-27419132-B",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "POWER_SUPPLY_TYPE",
+            "name": "Tipo de alimentación",
+            "value_id": "8152567",
+            "value_name": "Corriente eléctrica",
+            "value_struct": null,
+            "values": [{
+                "id": "8152567",
+                "name": "Corriente eléctrica",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "list"
+        }, {
+            "id": "PROCESSOR_SPEED",
+            "name": "Velocidad del procesador",
+            "value_id": "7885835",
+            "value_name": "3.5 GHz",
+            "value_struct": {
+                "number": 3.5,
+                "unit": "GHz"
+            },
+            "values": [{
+                "id": "7885835",
+                "name": "3.5 GHz",
+                "struct": {
+                    "number": 3.5,
+                    "unit": "GHz"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "RAM_MEMORY",
+            "name": "Memoria RAM",
+            "value_id": "98857",
+            "value_name": "16 GB",
+            "value_struct": {
+                "number": 16,
+                "unit": "GB"
+            },
+            "values": [{
+                "id": "98857",
+                "name": "16 GB",
+                "struct": {
+                    "number": 16,
+                    "unit": "GB"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "RELEASE_YEAR",
+            "name": "Año de lanzamiento",
+            "value_id": "11166326",
+            "value_name": "2022",
+            "value_struct": null,
+            "values": [{
+                "id": "11166326",
+                "name": "2022",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "SUPPORTED_APPLICATIONS",
+            "name": "Aplicaciones soportadas",
+            "value_id": null,
+            "value_name": "YouTube,Disney Plus,Netflix,Amazon Prime Video,Spotify,y otros",
+            "value_struct": null,
+            "values": [{
+                "id": "2390184",
+                "name": "YouTube",
+                "struct": null
+            }, {
+                "id": "10832444",
+                "name": "Disney Plus",
+                "struct": null
+            }, {
+                "id": "2390183",
+                "name": "Netflix",
+                "struct": null
+            }, {
+                "id": "2526436",
+                "name": "Amazon Prime Video",
+                "struct": null
+            }, {
+                "id": "2526429",
+                "name": "Spotify",
+                "struct": null
+            }, {
+                "id": "11088875",
+                "name": "y otros",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "string"
+        }, {
+            "id": "USB_PORTS_NUMBER",
+            "name": "Cantidad de puertos USB",
+            "value_id": "11769352",
+            "value_name": "4",
+            "value_struct": null,
+            "values": [{
+                "id": "11769352",
+                "name": "4",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number"
+        }, {
+            "id": "WIDTH",
+            "name": "Ancho",
+            "value_id": "2646907",
+            "value_name": "390 mm",
+            "value_struct": {
+                "number": 390,
+                "unit": "mm"
+            },
+            "values": [{
+                "id": "2646907",
+                "name": "390 mm",
+                "struct": {
+                    "number": 390,
+                    "unit": "mm"
+                }
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "number_unit"
+        }, {
+            "id": "WITH_BLUETOOTH",
+            "name": "Con Bluetooth",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }, {
+            "id": "WITH_HDMI",
+            "name": "Con HDMI",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }, {
+            "id": "WITH_USB",
+            "name": "Con USB",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }, {
+            "id": "WITH_WI_FI",
+            "name": "Con Wi-Fi",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [{
+                "id": "242085",
+                "name": "Sí",
+                "struct": null
+            }],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_type": "boolean"
+        }],
+        "warnings": [],
+        "listing_source": "",
+        "variations": [],
+        "status": "active",
+        "sub_status": [],
+        "tags": ["good_quality_picture", "good_quality_thumbnail", "standard_price_by_channel", "immediate_payment", "cart_eligible"],
+        "warranty": "Garantía del vendedor: 6 meses",
+        "catalog_product_id": "MCO19917557",
+        "domain_id": "MCO-GAME_CONSOLES",
+        "parent_item_id": null,
+        "differential_pricing": null,
+        "deal_ids": ["MCO2758", "MCO4467", "MCO2298", "MCO11035"],
+        "automatic_relist": false,
+        "date_created": "2022-12-17T18:22:06.000Z",
+        "last_updated": "2023-05-20T15:35:34.000Z",
+        "health": null,
+        "catalog_listing": true,
+        "channels": ["marketplace", "mshops"]
+    }
+}]

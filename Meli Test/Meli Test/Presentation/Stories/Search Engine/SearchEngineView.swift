@@ -87,6 +87,7 @@ struct SearchEngineView: View {
             }
             .navigationTitle(MeliLocalizables.searchNavTitle)
             .navigationBarHidden(true)
+            .toast(config: viewModel.toastConfig, isShowing: $viewModel.showToast)
         }
     }
     

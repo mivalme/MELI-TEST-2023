@@ -12,11 +12,13 @@ class SearchEngineViewModel: ObservableObject {
     @Published var categories: [ProductCategory] = []
     @Published var products: [Product] = []
     @Published var isLoading: Bool = false
+    @Published var showToast = false
+    @Published var toastConfig: Toast.Config?
     
     private let sitesUseCase: SitesUseCaseProtocol
     
-    init(searchUseCase: SitesUseCaseProtocol = SitesUseCase()) {
-        self.sitesUseCase = searchUseCase
+    init(sitesUseCase: SitesUseCaseProtocol = SitesUseCase()) {
+        self.sitesUseCase = sitesUseCase
         getCategories()
     }
     
@@ -27,8 +29,12 @@ class SearchEngineViewModel: ObservableObject {
             switch response {
             case .success(let data):
                 self.categories = data
-            default:
-                break
+            case .failure:
+                self.toastConfig = .init(message: MeliLocalizables.errorDefaultMessage, type: .error)
+                self.showToast = true
+            case .notConnectedToInternet:
+                self.toastConfig = .init(message: MeliLocalizables.noInternetConnectionMessage, type: .error)
+                self.showToast = true
             }
             self.isLoading = false
         }
@@ -46,8 +52,12 @@ class SearchEngineViewModel: ObservableObject {
             switch response {
             case .success(let data):
                 self.products = data.results
-            default:
-                break
+            case .failure:
+                self.toastConfig = .init(message: MeliLocalizables.errorDefaultMessage, type: .error)
+                self.showToast = true
+            case .notConnectedToInternet:
+                self.toastConfig = .init(message: MeliLocalizables.noInternetConnectionMessage, type: .error)
+                self.showToast = true
             }
             self.isLoading = false
         }

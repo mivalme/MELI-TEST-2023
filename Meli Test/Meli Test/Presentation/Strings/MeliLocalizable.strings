@@ -17,3 +17,5 @@
 "main_screen_instructions" = "Usa la barra de arriba para buscar un producto, o selecciona una categoría.";
 "search_nav_title" = "Buscar";
 "image_url" = "http://http2.mlstatic.com/D_%@-O.jpg";
+"no_internet_connection_error_message" = "No tienes conexión a internet";
+"error_default_message" = "Hubo un error, intenta de nuevo";
