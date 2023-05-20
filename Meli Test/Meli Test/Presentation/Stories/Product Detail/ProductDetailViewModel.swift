@@ -9,6 +9,8 @@ import Foundation
 
 class ProductDetailViewModel: ObservableObject {
     @Published var product: Product?
+    @Published var showToast = false
+    @Published var toastConfig: Toast.Config?
     
     let productId: String
     let itemsUseCase: ItemsUseCaseProtocol
@@ -25,8 +27,12 @@ class ProductDetailViewModel: ObservableObject {
             switch response {
             case .success(let data):
                 self.product = data.first?.body
-            default:
-                break
+            case .failure:
+                self.toastConfig = .init(message: MeliLocalizables.errorDefaultMessage, type: .error)
+                self.showToast = true
+            case .notConnectedToInternet:
+                self.toastConfig = .init(message: MeliLocalizables.noInternetConnectionMessage, type: .error)
+                self.showToast = true
             }
         }
     }

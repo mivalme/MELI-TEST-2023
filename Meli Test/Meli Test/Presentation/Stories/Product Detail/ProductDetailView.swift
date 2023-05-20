@@ -85,6 +85,7 @@ struct ProductDetailView: View {
             .padding(16)
         }
         .navigationBarTitleDisplayMode(.inline)
+        .toast(config: viewModel.toastConfig, isShowing: $viewModel.showToast)
     }
 }
 

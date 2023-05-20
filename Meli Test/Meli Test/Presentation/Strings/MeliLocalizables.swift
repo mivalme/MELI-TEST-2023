@@ -26,4 +26,6 @@ struct MeliLocalizables {
     static let mainScreenInstructions = "main_screen_instructions".localized
     static let searchNavTitle = "search_nav_title".localized
     static let imageUrl = "image_url".localized
+    static let noInternetConnectionMessage = "no_internet_connection_error_message".localized
+    static let errorDefaultMessage = "error_default_message".localized
 }
